@@ -8,7 +8,7 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/', function (req, res) {
-  res.status(200).send('ok');
+  res.status(200).send({ status: 'ok'});
 })
 
 app.get('/api/TodoItems', function (req, res) {
